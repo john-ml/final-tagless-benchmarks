@@ -1,0 +1,12 @@
+*.cmi
+*.cmx
+*.cmo
+*.du
+*.ud
+*.o
+*.swp
+*_mlton
+*_flambda
+initial
+final
+final_defunc
