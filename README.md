@@ -20,3 +20,46 @@ The binaries are:
 - `final_defunc_flambda`: Final + OCaml + flambda + manual defunctorization
 - `final_defunc_mlton`: Final MLton + manual defunctorization
 
+On my machine:
+```
+time -p ./initial 200 30
+22940398
+real 9.18
+user 9.15
+sys 0.02
+time -p ./initial_flambda 200 30
+22940398
+real 3.60
+user 3.56
+sys 0.04
+time -p ./initial_mlton 200 30
+25403522
+real 2.14
+user 1.92
+sys 0.22
+time -p ./final 200 30
+22940398
+real 8.95
+user 8.87
+sys 0.08
+time -p ./final_flambda 200 30
+22940398
+real 4.30
+user 4.20
+sys 0.09
+time -p ./final_defunc 200 30
+22940398
+real 8.94
+user 8.80
+sys 0.14
+time -p ./final_defunc_flambda 200 30
+22940398
+real 4.31
+user 4.23
+sys 0.07
+time -p ./final_defunc_mlton 200 30
+24929841
+real 1.46
+user 1.29
+sys 0.16
+```
